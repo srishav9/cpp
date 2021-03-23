@@ -29,6 +29,12 @@ int main()
 	number1 = 50;
 	cout<<"2n+1 = "<<number1 * 2 + 1<<"\n";
 
+	//Initialization:
+	int my_age;	//uninitialized; Garbage. DON'T
+	int my_age1 = 24;	//C-style, popular
+	int age3 (24);	//constructor initialization
+	int age4 {24};	//modern c++ initialization
+
 	char group = 'X';
 
 	bool is_male = true;
@@ -41,7 +47,7 @@ int main()
 
 	cout<<"my name is "<<name
 		<<" and group "<<group<<"\n"
-		<<is_male<<" "<<like_football<<"\n";
+		<<is_male<<" "<<like_football<<"\n";	//prints 1 0 i.e. internally bool is just [0,1]
     
     int a = 10;
 	int b = 21;
@@ -52,7 +58,7 @@ int main()
 	double x = 10.0;
 	double y = 21;
 
-	double d1 = x + y / 2.0;	// 20.5
+	double d1 = x + y / 2.0;	// 20.5	its going to divide first
 	double d2 = (x + y) / 2.0;	// 15.5
 
 	return 0;
