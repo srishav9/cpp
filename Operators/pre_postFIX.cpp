@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-
+//Rt to Lt precedence! for prefix and postfix oprators.
 	int a, b;
 
 	// ++a: prefix increment: increment then assign
