@@ -23,7 +23,9 @@ int main() {
 	cin>>result;	// First number
 	cnt -= 1;
 
-	// Read  times and maximize
+	// Read 9 times and maximize,	Later in while loops this wil look easy
+	//9 times because it is the constraint for cnt(N) given.
+	//Notice the writing style.. just good to understand XD
 	if(cnt > 0)		{cnt -=1;		cin>>num;	if(result < num)	result = num;		}
 	if(cnt > 0)		{cnt -=1;		cin>>num;	if(result < num)	result = num;		}
 	if(cnt > 0)		{cnt -=1;		cin>>num;	if(result < num)	result = num;		}

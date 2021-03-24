@@ -24,8 +24,8 @@ int main() {
 
 	int cnt = 0;
 
-	cnt += (a1 <= x);
-	cnt += (a2 <= x);
+	cnt += (a1 <= x);//Notice how we didnot even use an if condition here
+	cnt += (a2 <= x);//boolean will be 0 or 1 hence the true ones will get added up
 	cnt += (a3 <= x);
 	cnt += (a4 <= x);
 	cnt += (a5 <= x);

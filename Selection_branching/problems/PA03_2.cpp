@@ -25,7 +25,7 @@ int main() {
 
 	int res = -1;
 
-	// The next 3 if conditions: let's try to initalize res correctly
+	// The next 3 if conditions: let's try to initalize res correctly, with any of the valid input
 	if (a < 100)
 		res = a;
 

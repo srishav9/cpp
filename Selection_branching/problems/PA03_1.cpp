@@ -18,13 +18,14 @@ Problem #3: Maximum but constrained
 #include<iostream>
 using namespace std;
 
-// Assume all integers are >= 0
+//******** Assume all integers are >= 0  ********
 
 int main() {
 	int a, b, c, tmp;
 	cin >> a >> b >> c;
 
-	int res = -1;
+	int res = -1;	//bad initialization, doesnot work
+	//using the lowest -ve integer might have worked
 
 	if (a < 100 && a > res)
 		res = a;

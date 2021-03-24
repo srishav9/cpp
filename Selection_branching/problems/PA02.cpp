@@ -37,7 +37,7 @@ int main() {
 		// Now b, c are correct
 		// But a, b may not be again
 
-		if (b < a) {	// Swap them{
+		if (b < a) {	// Swap them
 			tmp = a;
 			a = b;
 			b = tmp;

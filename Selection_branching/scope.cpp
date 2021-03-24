@@ -33,14 +33,14 @@ int main() {
 
 	//cout<<age; // NOT visible outside scope
 
-	// Since C++17
+	// Since C++17 **
 	int x = 11;
 	if (x % 2 == 1)
 		cout << x << " is odd\n";
 	else if (x % 2 == 0)
 		cout << x << " is even\n";
 
-	cout << x << " is visible here but no need\n";
+	cout << x << " is still visible here but not needed\n";
 
 	// y visible only in if-else block
 	if (int y = 10; y % 2 == 1)
@@ -51,3 +51,8 @@ int main() {
 	return 0;
 }
 
+/*
+Solution:
+	if(condition) to ->
+	if(initialize ; condition)
+*/
