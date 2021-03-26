@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//High to low: 5+4+3+2+1
 int main() {
 	int x = 5;
 	int sum = 0;

@@ -7,7 +7,7 @@ int main() {
 		cin >> x >> y;
 		if (y == 0){
 			cout<<"Y is zero. Try other 2 numbers\n";
-			continue;
+			continue;	//jump to the start of the loop!! skipping the next steps
 		}
 		cout << x / y << "\n";
 	}
