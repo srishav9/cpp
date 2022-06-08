@@ -29,7 +29,8 @@ int main() {
 
 		int sum = digit1+digit2+digit3;
 
-		if ((sum%2) != 0)	// odd ****
+		if ((sum%2) != 0)	// **** odd
+			//comparision is better this way as negative numbers also included.. x%2==1 will not work for all odd numbers(-11%2 is -1 and not 1)
 			cout<<"this is a great number\n";
 		else
 		{

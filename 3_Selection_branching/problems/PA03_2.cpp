@@ -23,7 +23,7 @@ int main() {
 	int a, b, c, tmp;
 	cin >> a >> b >> c;
 
-	int res = -1;
+	int res = -1; //bad initialization
 
 	// The next 3 if conditions: let's try to initalize res correctly, with any of the valid input
 	if (a < 100)
