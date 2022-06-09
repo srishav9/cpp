@@ -15,7 +15,7 @@ they don’t intersect, print -1
 
 #include<iostream>
 using namespace std;
-//BRUTEFORCE solution!!
+//BRUTEFORCE solution!! shorter will be taking max of start and min of ends!! CHECK
 int main() {
     int s1, e1, s2, e2;
     cout<<"Enter: ";
@@ -24,38 +24,40 @@ int main() {
     if (e1<s2 || s1>e2){ 
         cout << -1;
     }
-
-    //intersections: 
-    //EQUAL:
-    if (s1==s2 && e1<e2){
-        cout<<"EQUAL"<<endl;
-        cout<<s1<<" - "<<e1;
-    }
+    else{
+        //intersections: 
+        //EQUAL:
+        if (s1==s2 && e1<e2){
+            cout<<"EQUAL"<<endl;
+            cout<<s1<<" - "<<e1;
+        }
     
-    //range 1 < range 2: 3 cases
-    // if(s1>s2 && e1<e2) { cout<<s1<<" - "<<e1; }
-    // if(s1==s2 && e1<e2) { cout<<s1<<" - "<<e1; }
-    // if(s1>s2 && e1==e2) { cout<<s1<<" - "<<e1; }
-    //consolidated:
-    if (s1>=s2 && e1<=e2){
-        cout<<"R1<R2"<<endl;
-        cout<<s1<<" - "<<e1;
-    }
+        //range 1 < range 2: 3 cases
+        // if(s1>s2 && e1<e2) { cout<<s1<<" - "<<e1; }
+        // if(s1==s2 && e1<e2) { cout<<s1<<" - "<<e1; }
+        // if(s1>s2 && e1==e2) { cout<<s1<<" - "<<e1; }
+        //consolidated:
+        if (s1>=s2 && e1<=e2){
+            cout<<"R1<R2"<<endl;
+            cout<<s1<<" - "<<e1;
+        }
 
-    //range 1 > range 2:
-    if (s2>=s1 && e2<=e1){
-        cout<<"R1>R2"<<endl;
-        cout<<s2<<" - "<<e2;
-    }
+        //range 1 > range 2:
+        if (s2>=s1 && e2<=e1){
+            cout<<"R1>R2"<<endl;
+            cout<<s2<<" - "<<e2;
+        }
 
-    //CROSS:
-    if (s1<s2 && e1<e2){
-        cout<<"CROSS"<<endl;
-        cout<<s2<<"-"<<e1;
+        //CROSS:
+        if (s1<s2 && e1<e2){
+            cout<<"CROSS"<<endl;
+            cout<<s2<<"-"<<e1;
+        }
+        else{
+            if(e1>e2){
+                cout<<"CROSS"<<endl;
+                cout<<s1<<"-"<<e2;
+            }
+        }
     }
-    if (s1>s2 && e1>e2){
-        cout<<"CROSS"<<endl;
-        cout<<s1<<"-"<<e2;
-    }
-
 }
