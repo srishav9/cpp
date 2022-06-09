@@ -1,5 +1,5 @@
 //Nested Loops:
-/*
+/*MOST USED FOR QUESTIONS
 ***************************
 Write a prog to read integer T for T test cases
 Thn read T integers, for each number N, print sum 0 -> N
