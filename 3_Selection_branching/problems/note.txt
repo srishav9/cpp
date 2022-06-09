@@ -1,0 +1,6 @@
+Problems can be solved in many ways, 
+some of the ways might be easier to find but very hard to code 
+and some approaches might be hard to find but easier to code.
+Sometimes the approach is hard to find and hard to code!!
+
+Dont just jump to code! think of various possibilities and a big picture out of the bruteforce!
