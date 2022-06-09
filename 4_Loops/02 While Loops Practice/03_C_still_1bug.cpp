@@ -13,11 +13,11 @@ int main() {
 
 	if (num == 0)
 		digits = 1;
-	else if (num == -2147483648)	//this will cause overflow for +ve integer of this magnitude
+	else if (num == -2147483648)	//this will cause overflow for +ve integer of this magnitude (Range -2147483648 to 2147483647)
 		digits = 10;
 	else {
 		if (num < 0)	//taking care of negative numbers..BUT only this wil not do! One more bug got introduced now.. Hence the 'else if' case :)
-			num = -num;
+			num = -num; // minus of "-2147483648" will cause eoverflow!!
 
 		while (num > 0) {
 			digits += 1;
