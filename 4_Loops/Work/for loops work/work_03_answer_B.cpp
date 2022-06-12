@@ -8,7 +8,7 @@ int main() {
 		for (int b = 1; b <= 200; ++b) {
 			for (int c = 1; c <= 200; ++c) {
 				int d = a + b - c;
-
+				//check d's shuddhatta :P
 				if(1 <= d && d <= 200)
 					count++;
 			}

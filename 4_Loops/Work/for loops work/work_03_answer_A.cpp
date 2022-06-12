@@ -8,7 +8,7 @@ int main() {
 		for (int b = 1; b <= 200; ++b) {
 			for (int c = 1; c <= 200; ++c) {
 				for (int d = 1; d <= 200; ++d) {
-					count += (a + b == c + d);
+					count += (a + b == c + d); //count inc by 1 which is output of condition!! cooool
 				}
 			}
 		}

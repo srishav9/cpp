@@ -18,7 +18,7 @@ int main() {
 		}
 
 		if (is_ok)
-		{
+		{	//Handling the comma part. if first print nahi hai then print comma else just print the number.
 			if(!first_print)
 				cout<<",";
 
